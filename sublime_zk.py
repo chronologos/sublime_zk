@@ -746,7 +746,7 @@ class ExternalSearch:
         if tags:
             args.extend(['--nofilename', '--nonumbers', '--only-matching'])
         else:
-            args.extend(['-l', '--ackmate'])
+            args.extend(['-l', '--ackmate', '--follow'])
         args.extend(['--silent', '-G', '.*\\' + extension, regexp, folder])
         return ExternalSearch.run(args, folder)
 
